@@ -1,27 +1,57 @@
 body {
     font-family: 'Roboto', 'sans-serif';
-    background-color:#eac926;
+    background-color: #eac926;
+    margin: 0;
+    padding: 0;
 }
 
 /* HEADER */
 
-.logo {
-    width: 40%;
-}
-
 header {
-    padding-top: 20px;
-    padding-left: 20px;
+    margin: auto;
 }
 
 .buscador {
-    padding-top: 5px;
+    width: 32vw;
+    border-radius: 12px;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .buscador input {
-    margin-top: 1%;
-    margin-bottom:0.2%;
-    width: 190px;
+    width: 85%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    border-radius: 12px;
+}
+
+.buscador i {
+    width: 12%;
+}
+
+.main-header-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    max-width: 50%;
+}
+
+.buscador {
+    max-width: 50%;
 }
 
 .main-navbar ul {
@@ -46,6 +76,11 @@ header {
 
 .cuerpos-texto {
     font-size: 12px;
+}
+
+.texto-header {
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .precios {
@@ -74,16 +109,50 @@ header {
     margin: auto;
 }
 
+/* Formulario */
+
+.create-form {
+    background-color:white;
+    padding: 20px 15px;
+}
+
+.control-form {
+    margin-bottom: 15px;
+}
+
+.control-form label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.control {
+    width: 90%;
+    padding: 8px;
+}
+
+.button-form {
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 /* Main */
 
 main {
-    width: 90%;
+    width: 100%;
+    padding: 20px;
+    background-color: whitesmoke;
 }
 
 .articulo {
     margin-bottom: 10px;
     background-color: white;
     box-sizing: border-box;
+    max-width: 400px;
 }
 
 article div {
@@ -95,6 +164,20 @@ article div {
 
 article img {
     width: 90%;
+    padding-left: 5%;
+}
+
+.precios, .descuentos {
+    display: inline-block;
+    max-width: 50%;
+}
+
+.descuentos, .fa-truck {
+    color: #39b54a; 
+}
+
+.fa-truck {
+    display: inherit;
 }
 
 .descripciones {
@@ -104,6 +187,25 @@ article img {
 nav {
     display: none;
 }
+
+.main-containerarticulos1, .main-containerarticulos2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section-ultimavisita, .section-ofertasarticulos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .articulo {
+    flex: 1 1 23%;
+    margin-bottom: 30px;
+  } */
 
 /* Footer */
 
@@ -115,38 +217,27 @@ footer {
 }
 
 footer i {
-    color: #1259c3; 
+    color: #1259c3;
 }
 
 .footer-section {
     margin-bottom: 60px;
 }
 
-@media (min-width: 361px) {
+/*Tablet*/
 
-    .descripciones {
-        display: inline;
-    }
+@media (min-width: 679px) {
 
-    article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    /* Header */
+
+    .main-header-top-bar {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
     }
 
     .burger-menu {
         display: none;
-    }
-    
-    .main-navbar {
-        display: inline-block;
-    }
-}
-
-@media (min-width: 768px) {
-    .main-header-top-bar {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 20px;
     }
 
     .main-navbar {
@@ -169,12 +260,16 @@ footer i {
         max-height: 32px
     }
 
+    /* Main */
+
+    .descripciones {
+        display: inherit;
+    }
+
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
 }
 
-
-
-
-
-
-
-
+/*Desktop min-width:1200*/
