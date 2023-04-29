@@ -5,12 +5,22 @@ body {
     padding: 0;
 }
 
+/* Font Sizes */
+
+.texto-header {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor-form label {
+    font-size: 14px;
+}
+
 /* HEADER */
 
 header {
     margin: auto;
     background-color: #eac926;
-    padding-left: 20px;
     padding-bottom: 20px;
 }
 
@@ -71,31 +81,12 @@ header {
     font-size: 17px;
 }
 
-/* Font Sizes */
-
-.titulares {
-    font-size: 24px;
-}
-
-.cuerpos-texto {
-    font-size: 12px;
-}
-
-.texto-header {
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.precios {
-    font-size: 18px;
-}
-
-.descuentos {
-    font-size: 16px;
-}
-
 .descripciones {
-    font-size: 16px;
+    display: none;
+}
+
+nav {
+    display: none;
 }
 
 /* Burger Menu */
@@ -112,34 +103,27 @@ header {
     margin: auto;
 }
 
-.banner {
-    width: 100vw;
-}
-
 /* Formulario */
 
-.create-form {
-    background-color:white;
-    padding: 20px 15px;
-    max-width: 50%;
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: left;
+    margin: 20px;
+    background-color: white;
 }
 
-.control-form {
-    margin-bottom: 15px;
+.contenedor-form, .botones {
+    margin-bottom: 2%;
+    padding-left: 10%;
 }
 
-.control-form label {
-    margin-bottom: 5px;
-    font-style: italic;
-    display: block;
+.botones {
+    margin-top: 1%;
 }
 
-.control {
-    width: 90%;
-    padding: 8px;
-}
-
-.button-form {
+.botones button {
     background-color: #39b54a;
     border: none;
     font-size: 20px;
@@ -148,98 +132,13 @@ header {
     border-radius: 5px;
 }
 
-/* Main */
-
-main {
-    width: 100%;
-    padding: 20px;
-    background-color: whitesmoke;
+.contenedor-form input {
+    font-size: 14px;
 }
 
-.articulo {
-    margin-bottom: 10px;
-    background-color: white;
-    box-sizing: border-box;
-    max-width: 400px;
-}
-
-.container-textoarticulo {
-    border-top: 1px solid #ebebeb;
-    background-color: white;
-    padding: 15px;
-    width: 90%;
-}
-
-article img {
-    width: 90%;
-    padding-left: 5%;
-}
-
-.precios, .descuentos {
-    display: inline-block;
-    max-width: 50%;
-}
-
-.descuentos, .fa-truck {
-    color: #39b54a; 
-}
-
-.fa-truck {
-    display: inherit;
-}
-
-.camion {
-    border: 3px solid #39b54a;
-    border-radius: 50%;
-    max-width: 20px;
-    margin:auto;
-}
-
-.descripciones {
-    display: none;
-}
-
-nav {
-    display: none;
-}
-
-.main-containerarticulos1, .main-containerarticulos2 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.section-ultimavisita, .section-ofertasarticulos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-/* .articulo {
-    flex: 1 1 23%;
-    margin-bottom: 30px;
-  } */
-
-/* Footer */
-
-footer {
-    text-align: center;
-    background-color: white;
-    padding: 15px;
-    padding-top: 50px;
-}
-
-footer i {
+.contenedor-form input:focus {
     color: #1259c3;
 }
-
-.footer-section {
-    margin-bottom: 60px;
-}
-
-/*Tablet*/
 
 @media (min-width: 679px) {
 
@@ -293,7 +192,8 @@ footer i {
     .logo {
         max-width: 400px;
     }
-    .banner {
-        width: 1437px;
-    }
 }
+
+
+
+
