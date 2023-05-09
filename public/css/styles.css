@@ -10,8 +10,8 @@ body {
 .main-header {
     margin: auto;
     background-color: #eac926;
-    padding-left: 20px;
     padding-bottom: 20px;
+    padding-top: 10px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -28,6 +28,7 @@ body {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    padding: 5px;
 }
 
 .buscador input {
@@ -51,7 +52,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    max-width: 495px;
+    max-width: 428px;
+    margin:auto;
 }
 
 .logo {
