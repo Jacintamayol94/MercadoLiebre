@@ -34,6 +34,7 @@ header {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    padding: 2px;
 }
 
 .buscador input {
@@ -47,7 +48,8 @@ header {
 }
 
 .buscador i {
-    width: 12%;
+    box-sizing: border-box;
+    width: 16px;
 }
 
 .main-header-top-bar {
@@ -138,6 +140,14 @@ nav {
 
 .contenedor-form input:focus {
     color: #1259c3;
+}
+
+.botones button:hover {
+    background-color:#1259c3;
+}
+
+.botones button {
+    transition: background-color 0.5s;
 }
 
 @media (min-width: 679px) {

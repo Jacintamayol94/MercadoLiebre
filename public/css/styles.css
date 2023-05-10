@@ -11,7 +11,7 @@ body {
     margin: auto;
     background-color: #eac926;
     padding-bottom: 20px;
-    padding-top: 10px;
+    padding-top: 20px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -42,7 +42,8 @@ body {
 }
 
 .buscador i {
-    width: 12%;
+    box-sizing: border-box;
+    width: 16px;
 }
 
 .main-header-top-bar {
@@ -161,7 +162,7 @@ body {
 }
 
 .button-form {
-    transition: background-color 1s;
+    transition: background-color 0.5s;
 }
 
 /* Main */
