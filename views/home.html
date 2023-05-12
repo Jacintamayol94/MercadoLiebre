@@ -52,48 +52,60 @@
 
     </header>
 
+    <main>
+
     <img src="/images/img-home-banner.jpg" class="banner">
 
+    <h3 class="publicar">Publicá tu primer producto!</h3>
+
     <form action="/crear-producto" method="post" class="create-form">
+
         <div class="control-form">
             <label>Nombre del producto:</label>
             <input type="text" name="nombre" class="control">
             <span id="mensaje-error"></span>
         </div>
+
         <div class="control-form">
             <label>Precio:</label>
-            <input type="number" name="precio" placeholder="123.56" class="contol">
+            <input type="number" name="precio" placeholder="123.56" class="control">
             <span id="mensaje-error"></span>
         </div>
+
         <div class="control-form">
             <label>Categorías</label>
-            <select name="categoria">
+            <select name="categoria" class="control">
                 <option value="hogar">Hogar</option>
                 <option value="electro">Electro</option>
                 <option value="industria">Industria</option>
             </select>
         </div>
+
         <div class="control-form">
             <label>Descripción</label>
-            <textarea name="descripcion"></textarea>
+            <textarea name="descripcion" class="control"></textarea>
         </div>
+
         <div class="control-form">
             <label>Está en oferta:</label>
             <input type="radio" name="oferta">
         </div>
+        
         <div class="control-form">
             <label>Ciudad</label>
-            <select name="ciudad">
+            <select name="ciudad" class="control">
                 <option value="ba">Buenos Aires</option>
                 <option value="ro">Rosario</option>
                 <option value="mz">Mendoza</option>
             </select>
         </div>
-        <button type="reset" class="button-form">Borrar</button>
-        <button type="submit" class="button-form">Guardar</button>
+
     </form>
 
-    <main>
+        <div class="buttons">
+        <button type="reset" class="button-form">Borrar</button>
+        <button type="submit" class="button-form">Guardar</button>
+        </div>
 
         <section class="section-ultimavisita">
             <h2 class="titulares">Basado en tu última visita</h2>

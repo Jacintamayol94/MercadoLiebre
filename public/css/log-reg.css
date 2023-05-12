@@ -111,14 +111,27 @@ nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: left;
-    margin: 20px;
+    align-items: center;
     background-color: white;
+    padding: 20px;
+    border: 2px grey solid;
+    border-radius: 14px;
+    background-color: whitesmoke;
 }
 
-.contenedor-form, .botones {
-    margin-bottom: 2%;
-    padding-left: 10%;
+.contenedor-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.contenedor-form label {
+    font-size: 18px;
+    background-color: #39b54a47;
 }
 
 .botones {
@@ -135,11 +148,12 @@ nav {
 }
 
 .contenedor-form input {
-    font-size: 14px;
+    font-size: 18px;
+    color: black;
 }
 
 .contenedor-form input:focus {
-    color: #1259c3;
+    border: 1px #1259c3 solid;
 }
 
 .botones button:hover {
@@ -182,6 +196,29 @@ nav {
 
     header button {
         max-height: 32px
+    }
+
+    /* Formulario */
+
+    .formulario {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 20px;
+        margin: 10px 200px;
+        border: 2px grey solid;
+        border-radius: 14px;
+        background-color: whitesmoke;
+    }
+
+    .categorias {
+        display: inline-block;
+    }
+
+    .texto {
+        width: 300px;
     }
 
     /* Main */

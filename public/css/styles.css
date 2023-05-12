@@ -52,7 +52,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 60px;
     max-width: 428px;
     margin:auto;
 }
@@ -129,23 +129,38 @@ body {
 
 .create-form {
     background-color:white;
-    padding: 20px 15px;
-    max-width: 50%;
+    padding: 10px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+    margin: 20px 40px;
 }
 
 .control-form {
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .control-form label {
     margin-bottom: 5px;
     font-style: italic;
-    display: block;
 }
 
 .control {
-    width: 90%;
+    width: 70%;
     padding: 8px;
+    text-align: center;
+    margin: 0px 40px;
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .button-form {
@@ -163,6 +178,10 @@ body {
 
 .button-form {
     transition: background-color 0.5s;
+}
+
+.publicar {
+    text-align: center;
 }
 
 /* Main */
@@ -271,11 +290,16 @@ footer {
 
 footer i {
     color: #1259c3;
+    transition: color 0.5s;
+}
+
+footer i:hover {
+    color: #666;
 }
 
 /*Tablet*/
 
-@media (min-width: 679px) {
+@media (min-width: 769px) {
 
     /* Header */
 
@@ -294,6 +318,7 @@ footer i {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 40px;
     }
 
     .main-navbar ul {
@@ -308,6 +333,19 @@ footer i {
 
     header button {
         max-height: 32px
+    }
+
+    /* Formulario */
+
+    .create-form {
+        background-color:white;
+        padding: 10px 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        text-align: center;
+        gap: 20px;
+        margin: 20px 40px;
     }
 
     /* Main */
@@ -379,4 +417,18 @@ footer {
 }
 
 }
-/*Desktop min-width:1200*/
+
+
+
+/* Desktop */
+
+@media (min-width: 769px){
+
+}
+
+/* Computadora */
+
+@media (min-width: 1280px) {
+
+}
+

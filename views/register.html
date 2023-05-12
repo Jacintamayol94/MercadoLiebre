@@ -55,11 +55,11 @@
 
     <section class="formulario">
         <div class="contenedor-form"><label>Nombre y apellido: </label>
-            <input type="text" name="nombre">
+            <input type="text" name="nombre" class="texto">
         </div>
 
         <div class="contenedor-form"><label>Nombre de usuario:</label>
-            <input type="text" name="usuario">
+            <input type="text" name="usuario" class="texto">
         </div>
 
         <div class="contenedor-form"><label>Fecha de nacimiento:</label>
@@ -67,15 +67,15 @@
         </div>
 
         <div class="contenedor-form"><label>Domicilio: </label>
-            <input type="text" name="domicilio">
+            <input type="text" name="domicilio" class="texto">
         </div>
 
-        <div class="contenedor-form"><label>Quiero:</label>
+        <div class="contenedor-form categorias"><label>Quiero:</label>
             <input type="radio" name="perfilusuario" value="comprador">Comprar</input>
             <input type="radio" name="perfilusuario" value="vendedor">Vender</input>
         </div>
 
-        <div class="contenedor-form"><label>Categorías de interés: </label>
+        <div class="contenedor-form categorias"><label>Categorías de interés: </label>
             <input type="checkbox" name="categorias" value="electro">Electro</input>
             <input type="checkbox" name="categorias" value="moda">Moda</input>
             <input type="checkbox" name="categorias" value="hogar">Hogar</input>
@@ -83,12 +83,12 @@
             <input type="checkbox" name="categorias" value="vidasana">Vida sana</input>
         </div>
 
-        <div class="contenedor-form"><label>Subí tu imagen de perfil!</label>
-            <input type="file" name="imagendeperfil" accept=".jpg, .png">
+        <div class="contenedor-form categorias"><label>Subí tu imagen de perfil!</label>
+            <input type="file" name="imagendeperfil" accept=".jpg, .png" class="subirfoto">
         </div>
 
-        <div class="contenedor-form"><label>Contraseña: </label><input type="password" name="password"></div>
-        <div class="contenedor-form"><label>Confirmá tu contraseña: </label><input type="password" name="password"></div>
+        <div class="contenedor-form"><label>Contraseña: </label><input type="password" name="password" class="texto"></div>
+        <div class="contenedor-form"><label>Confirmá tu contraseña: </label><input type="password" name="password" class="texto"></div>
 
         <div class="botones"><button type="reset" class="button-form">Borrar</button>
             <button type="submit" class="button-form">Enviar</button>
